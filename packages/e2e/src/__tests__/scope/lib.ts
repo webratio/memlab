@@ -7,7 +7,7 @@
  * @format
  * @oncall web_perf_infra
  */
-import type {AnyValue} from '@memlab/core';
+import type {AnyValue} from '@wrtools/memlab-core';
 import Script from '../../code-analysis/Script';
 
 export function testScopeAnalysis(code: string, expectedScope: AnyValue): void {

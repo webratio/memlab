@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {MemLabConfig} from '@memlab/core';
-import {BaseOption, constant} from '@memlab/core';
+import type {MemLabConfig} from '@wrtools/memlab-core';
+import {BaseOption, constant} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 const devices = constant.isFRL

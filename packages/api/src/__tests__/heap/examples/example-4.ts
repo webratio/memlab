@@ -8,9 +8,9 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapSnapshot} from '@memlab/core';
-import {dumpNodeHeapSnapshot} from '@memlab/core';
-import {getFullHeapFromFile} from '@memlab/heap-analysis';
+import type {IHeapSnapshot} from '@wrtools/memlab-core';
+import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
 
 (async function () {
   const heapFile = dumpNodeHeapSnapshot();

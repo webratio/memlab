@@ -9,8 +9,8 @@
  */
 
 import path from 'path';
-import type {E2EScenarioSynthesizerConstructor} from '@memlab/core';
-import {fileManager} from '@memlab/core';
+import type {E2EScenarioSynthesizerConstructor} from '@wrtools/memlab-core';
+import {fileManager} from '@wrtools/memlab-core';
 import BaseSynthesizer from './BaseSynthesizer';
 
 class TestRunnerLoader {

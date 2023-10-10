@@ -11,7 +11,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import {run} from '../../index';
-import {PluginUtils} from '@memlab/heap-analysis';
+import {PluginUtils} from '@wrtools/memlab-heap-analysis';
 import {
   defaultAnalysisArgs,
   scenario,

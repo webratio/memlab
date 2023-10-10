@@ -10,7 +10,7 @@
 
 import BaseOperation from './BaseOperation';
 import type {Page} from 'puppeteer';
-import {config} from '@memlab/core';
+import {config} from '@wrtools/memlab-core';
 
 export default class BackOperation extends BaseOperation {
   kind: string;

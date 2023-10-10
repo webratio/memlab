@@ -9,9 +9,9 @@
  */
 
 import type {Browser} from 'puppeteer';
-import type {MemLabConfig} from '@memlab/core';
+import type {MemLabConfig} from '@wrtools/memlab-core';
 
-import {config, constant, utils} from '@memlab/core';
+import {config, constant, utils} from '@wrtools/memlab-core';
 
 const puppeteer = constant.isFRL
   ? {}

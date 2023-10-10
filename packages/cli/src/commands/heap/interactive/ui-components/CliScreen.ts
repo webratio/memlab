@@ -9,7 +9,7 @@
  */
 import type {Widgets} from 'blessed';
 import type {ListCallbacks, ListItemSelectInfo} from './ListComponent';
-import type {IHeapSnapshot, Nullable, Optional} from '@memlab/core';
+import type {IHeapSnapshot, Nullable, Optional} from '@wrtools/memlab-core';
 import {ComponentDataItem, getHeapObjectAt, debounce} from './HeapViewUtils';
 
 import blessed from 'blessed';

@@ -9,7 +9,7 @@
  */
 
 import {Page} from 'puppeteer';
-import type {E2EOperation} from '@memlab/core';
+import type {E2EOperation} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 
 class CompoundOperation extends BaseOperation {

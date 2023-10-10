@@ -11,10 +11,10 @@
 import type {AnalyzeSnapshotResult, HeapAnalysisOptions} from '../PluginUtils';
 
 import chalk from 'chalk';
-import {info, utils, BaseOption, IHeapEdge} from '@memlab/core';
+import {info, utils, BaseOption, IHeapEdge} from '@wrtools/memlab-core';
 import BaseAnalysis from '../BaseAnalysis';
 import pluginUtils from '../PluginUtils';
-import type {IHeapSnapshot, IHeapNode} from '@memlab/core';
+import type {IHeapSnapshot, IHeapNode} from '@wrtools/memlab-core';
 import SnapshotFileOption from '../options/HeapAnalysisSnapshotFileOption';
 
 type ObjectPatterns = {

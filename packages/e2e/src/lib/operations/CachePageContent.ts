@@ -9,9 +9,9 @@
  */
 
 import type {Page} from 'puppeteer';
-import type {AnyValue} from '@memlab/core';
+import type {AnyValue} from '@wrtools/memlab-core';
 
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 
 type PageFunction = (page: Page) => Promise<AnyValue>;

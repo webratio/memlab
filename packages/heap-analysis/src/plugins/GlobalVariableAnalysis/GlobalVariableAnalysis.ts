@@ -8,13 +8,13 @@
  * @oncall web_perf_infra
  */
 
-import {IHeapEdge, IHeapNode, IHeapSnapshot, utils} from '@memlab/core';
+import {IHeapEdge, IHeapNode, IHeapSnapshot, utils} from '@wrtools/memlab-core';
 import type {
   AnalyzeSnapshotResult,
   HeapAnalysisOptions,
 } from '../../PluginUtils';
 
-import {BaseOption} from '@memlab/core';
+import {BaseOption} from '@wrtools/memlab-core';
 import SnapshotFileOption from '../../options/HeapAnalysisSnapshotFileOption';
 import BaseAnalysis from '../../BaseAnalysis';
 import pluginUtils from '../../PluginUtils';

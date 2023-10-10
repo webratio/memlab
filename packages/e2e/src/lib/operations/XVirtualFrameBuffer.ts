@@ -9,8 +9,8 @@
  */
 
 import Xvfb from 'xvfb';
-import type {Nullable, XvfbType} from '@memlab/core';
-import {info, config} from '@memlab/core';
+import type {Nullable, XvfbType} from '@wrtools/memlab-core';
+import {info, config} from '@wrtools/memlab-core';
 
 export default {
   startIfEnabled(): Nullable<XvfbType> {

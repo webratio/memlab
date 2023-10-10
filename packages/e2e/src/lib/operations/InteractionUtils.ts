@@ -10,11 +10,11 @@
 
 'use strict';
 
-import {info, config} from '@memlab/core';
+import {info, config} from '@wrtools/memlab-core';
 import path from 'path';
 
 import type {Page, ElementHandle} from 'puppeteer';
-import type {CheckPageLoadCallback, OperationArgs} from '@memlab/core';
+import type {CheckPageLoadCallback, OperationArgs} from '@wrtools/memlab-core';
 
 function waitFor(delay: number): Promise<void> {
   return new Promise(resolve => {

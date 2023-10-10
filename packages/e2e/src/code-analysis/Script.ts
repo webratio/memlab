@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import type {Nullable, Optional} from '@memlab/core';
+import type {Nullable, Optional} from '@wrtools/memlab-core';
 
 import type {
   ArrowFunctionExpression,
@@ -25,7 +25,7 @@ import type {ParseResult} from '@babel/core';
 
 import traverse from '@babel/traverse';
 import {parse} from '@babel/parser';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 
 export type ClosureScope = {
   functionName: Optional<string>;

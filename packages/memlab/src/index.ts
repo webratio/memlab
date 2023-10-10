@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 import path from 'path';
-import {PackageInfoLoader} from '@memlab/core';
+import {PackageInfoLoader} from '@wrtools/memlab-core';
 /** @internal */
 export async function registerPackage(): Promise<void> {
   return PackageInfoLoader.registerPackage(path.join(__dirname, '..'));
 }
 
-export * from '@memlab/api';
+export * from '@wrtools/memlab-api';

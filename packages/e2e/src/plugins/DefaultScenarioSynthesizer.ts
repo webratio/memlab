@@ -13,7 +13,7 @@ import type {
   CheckPageLoadCallback,
   IE2EScenarioVisitPlan,
   IE2EStepBasic,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import type {Page} from 'puppeteer';
 import BaseSynthesizer from '../BaseSynthesizer';
 import interactUtils from '../lib/operations/InteractionUtils';

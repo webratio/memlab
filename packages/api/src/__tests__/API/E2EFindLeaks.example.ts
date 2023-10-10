@@ -10,7 +10,7 @@
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
-import {info} from '@memlab/core';
+import {info} from '@wrtools/memlab-core';
 import {Page} from 'puppeteer';
 import {run} from '../../index';
 

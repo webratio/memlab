@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {Optional} from '@memlab/core';
+import type {Optional} from '@wrtools/memlab-core';
 
 import fs from 'fs';
 import path from 'path';
-import {fileManager, info, utils} from '@memlab/core';
+import {fileManager, info, utils} from '@wrtools/memlab-core';
 import BaseCommand from './BaseCommand';
 import GenerateCLIDocCommand from './commands/helper/GenerateCLIDocCommand';
 

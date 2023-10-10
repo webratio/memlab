@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 import type {Widgets} from 'blessed';
-import type {Nullable} from '@memlab/core';
+import type {Nullable} from '@wrtools/memlab-core';
 import type HeapViewController from './HeapViewController';
 
 import blessed from 'blessed';

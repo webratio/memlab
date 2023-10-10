@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions} from '@memlab/core';
+import type {CLIOptions} from '@wrtools/memlab-core';
 
-import {BaseOption} from '@memlab/core';
+import {BaseOption} from '@wrtools/memlab-core';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {BaseAnalysis} from '@memlab/heap-analysis';
+import {BaseAnalysis} from '@wrtools/memlab-heap-analysis';
 
 export default class HeapAnalysisSubCommandWrapper extends BaseCommand {
   private heapAnalysis: BaseAnalysis;

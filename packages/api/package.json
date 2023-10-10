@@ -1,5 +1,5 @@
 {
-  "name": "@memlab/api",
+  "name": "@wrtools/memlab-api",
   "version": "1.0.25",
   "license": "MIT",
   "description": "memlab API",
@@ -23,13 +23,10 @@
     "dist",
     "LICENSE"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
-    "@memlab/core": "^1.1.10",
-    "@memlab/e2e": "^1.0.9",
-    "@memlab/heap-analysis": "^1.0.7",
+    "@wrtools/memlab-core": "^1.1.10",
+    "@wrtools/memlab-e2e": "^1.0.9",
+    "@wrtools/memlab-heap-analysis": "^1.0.7",
     "ansi": "^0.3.1",
     "babar": "^0.2.0",
     "chalk": "^4.0.0",
@@ -53,17 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/facebook/memlab.git",
+    "url": "git+https://github.com/webratio/memlab.git",
     "directory": "packages/api"
   },
   "scripts": {
     "build-pkg": "tsc",
     "test-pkg": "jest .",
-    "publish-patch": "npm publish",
     "clean-pkg": "rm -rf ./dist && rm -rf ./node_modules && rm -f ./tsconfig.tsbuildinfo"
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/memlab/issues"
-  },
-  "homepage": "https://github.com/facebook/memlab#readme"
+  }
 }

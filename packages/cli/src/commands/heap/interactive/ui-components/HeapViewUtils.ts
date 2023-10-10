@@ -7,10 +7,10 @@
  * @format
  * @oncall web_perf_infra
  */
-import type {Nullable, IHeapEdge, IHeapNode} from '@memlab/core';
+import type {Nullable, IHeapEdge, IHeapNode} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 
 const lessUsefulEdgeTypeForDebugging = new Set([
   'internal',

@@ -8,13 +8,13 @@
  * @oncall web_perf_infra
  */
 
-import type {AnyFunction, Nullable} from '@memlab/core';
+import type {AnyFunction, Nullable} from '@wrtools/memlab-core';
 import type {RewriteScriptOption} from './instrumentation/ScriptRewriteManager';
 import type {ClosureScope} from './code-analysis/Script';
 
 import fs from 'fs';
 import path from 'path';
-import {config, fileManager} from '@memlab/core';
+import {config, fileManager} from '@wrtools/memlab-core';
 import Script from './code-analysis/Script';
 import ScriptRewriteManager from './instrumentation/ScriptRewriteManager';
 

@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 
-import {CLIOptions, info} from '@memlab/core';
+import {CLIOptions, info} from '@wrtools/memlab-core';
 
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {fileManager, BaseOption} from '@memlab/core';
+import {fileManager, BaseOption} from '@wrtools/memlab-core';
 
 export default class QueryDefaultWorkDirCommand extends BaseCommand {
   getCommandName(): string {

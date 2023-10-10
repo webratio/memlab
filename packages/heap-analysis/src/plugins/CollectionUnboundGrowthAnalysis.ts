@@ -14,10 +14,10 @@ import type {
   IHeapNode,
   IHeapSnapshot,
   IMemoryAnalystOptions,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import fs from 'fs';
-import {config, info, memoryBarChart, serializer, utils} from '@memlab/core';
+import {config, info, memoryBarChart, serializer, utils} from '@wrtools/memlab-core';
 import BaseAnalysis from '../BaseAnalysis';
 import SnapshotDirectoryOption from '../options/HeapAnalysisSnapshotDirectoryOption';
 import pluginUtils from '../PluginUtils';

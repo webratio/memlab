@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import {AnyRecord, MemLabConfig} from '@memlab/core';
-import {BaseOption} from '@memlab/core';
+import {AnyRecord, MemLabConfig} from '@wrtools/memlab-core';
+import {BaseOption} from '@wrtools/memlab-core';
 import optionConstants from './lib/OptionConstant';
 
 export default class SetWorkingDirectoryOption extends BaseOption {

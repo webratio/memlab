@@ -9,9 +9,9 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {MemLabConfig} from '@memlab/core';
-import {constant, utils, BaseOption} from '@memlab/core';
-import {E2EUtils} from '@memlab/e2e';
+import type {MemLabConfig} from '@wrtools/memlab-core';
+import {constant, utils, BaseOption} from '@wrtools/memlab-core';
+import {E2EUtils} from '@wrtools/memlab-e2e';
 import optionConstants from '../lib/OptionConstant';
 
 export default class ScenarioFileOption extends BaseOption {

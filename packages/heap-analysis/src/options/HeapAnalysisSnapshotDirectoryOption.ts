@@ -11,7 +11,7 @@
 import type {ParsedArgs} from 'minimist';
 
 import fs from 'fs';
-import {BaseOption, MemLabConfig, utils} from '@memlab/core';
+import {BaseOption, MemLabConfig, utils} from '@wrtools/memlab-core';
 
 export default class HeapAnalysisSnapshotDirectoryOption extends BaseOption {
   getOptionName(): string {

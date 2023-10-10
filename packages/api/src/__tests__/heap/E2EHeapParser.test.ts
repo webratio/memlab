@@ -8,9 +8,9 @@
  * @oncall web_perf_infra
  */
 
-import type {AnyValue, IHeapNode, IHeapSnapshot} from '@memlab/core';
+import type {AnyValue, IHeapNode, IHeapSnapshot} from '@wrtools/memlab-core';
 
-import {config, utils} from '@memlab/core';
+import {config, utils} from '@wrtools/memlab-core';
 import {isExpectedSnapshot} from './lib/HeapParserTestUtils';
 
 declare global {

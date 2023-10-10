@@ -30,8 +30,8 @@ import MemLabTaggedStore from './heap-data/MemLabTagStore';
  * the input argument `o`)
  * * **Examples**:
  * ```typescript
- * import type {IHeapSnapshot, AnyValue} from '@memlab/core';
- * import {config, takeNodeMinimalHeap, tagObject} from '@memlab/core';
+ * import type {IHeapSnapshot, AnyValue} from '@wrtools/memlab-core';
+ * import {config, takeNodeMinimalHeap, tagObject} from '@wrtools/memlab-core';
  *
  * test('memory test', async () => {
  *   config.muteConsole = true;
@@ -71,9 +71,9 @@ export function tagObject<T extends object>(o: T, tag: string): T {
  *
  * * **Examples**:
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -109,8 +109,8 @@ export function dumpNodeHeapSnapshot(): string {
  * use {@link takeNodeFullHeap}.
  * For example:
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import {takeNodeFullHeap} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import {takeNodeFullHeap} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heap: IHeapSnapshot = await takeNodeFullHeap();
@@ -138,8 +138,8 @@ export async function getNodeInnocentHeap(): Promise<IHeapSnapshot> {
  *
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import {takeNodeMinimalHeap} from '@memlab/core';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import {takeNodeMinimalHeap} from '@wrtools/memlab-core';
  *
  * (async function () {
  *   const heap: IHeapSnapshot = await takeNodeMinimalHeap();

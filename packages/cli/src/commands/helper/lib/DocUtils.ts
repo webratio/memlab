@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import type {CommandOptionExample} from '@memlab/core';
+import type {CommandOptionExample} from '@wrtools/memlab-core';
 
 type GenerateExampleCommandOption = {
   descriptionAsBashComment?: boolean;

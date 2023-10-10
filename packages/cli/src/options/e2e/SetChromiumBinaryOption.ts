@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 import type {ParsedArgs} from 'minimist';
-import {MemLabConfig} from '@memlab/core';
+import {MemLabConfig} from '@wrtools/memlab-core';
 
 import path from 'path';
 import fs from 'fs';
-import {info, utils, BaseOption} from '@memlab/core';
+import {info, utils, BaseOption} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class SetChromiumBinaryOption extends BaseOption {

@@ -8,13 +8,13 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, CommandOptionExample} from '@memlab/core';
+import type {CLIOptions, CommandOptionExample} from '@wrtools/memlab-core';
 
-import {info, utils} from '@memlab/core';
+import {info, utils} from '@wrtools/memlab-core';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {heapAnalysisLoader} from '@memlab/heap-analysis';
+import {heapAnalysisLoader} from '@wrtools/memlab-heap-analysis';
 import HeapAnalysisSubCommandWrapper from './HeapAnalysisSubCommandWrapper';
-import {BaseAnalysis} from '@memlab/heap-analysis';
+import {BaseAnalysis} from '@wrtools/memlab-heap-analysis';
 import HelperCommand from '../helper/HelperCommand';
 import InitDirectoryCommand from '../InitDirectoryCommand';
 

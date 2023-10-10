@@ -9,8 +9,8 @@
  */
 
 import {Page} from 'puppeteer';
-import {utils} from '@memlab/core';
-import type {AnyValue} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
+import type {AnyValue} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 
 type OperationFactory = (memCache: Record<string, AnyValue>) => BaseOperation;

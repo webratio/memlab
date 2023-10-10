@@ -9,10 +9,10 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {Nullable} from '@memlab/core';
+import type {Nullable} from '@wrtools/memlab-core';
 
 import fs from 'fs';
-import {fileManager} from '@memlab/core';
+import {fileManager} from '@wrtools/memlab-core';
 
 export function extractAndCheckWorkDirs(
   optionName: string,

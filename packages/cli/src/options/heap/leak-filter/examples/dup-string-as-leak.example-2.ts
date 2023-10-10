@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {IHeapNode, IHeapSnapshot, HeapNodeIdSet, utils} from '@memlab/core';
+import {IHeapNode, IHeapSnapshot, HeapNodeIdSet, utils} from '@wrtools/memlab-core';
 import {initMap} from './FilterLib';
 
 let map = Object.create(null);

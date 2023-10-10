@@ -9,9 +9,9 @@
  */
 
 import type {CDPSession, Page} from 'puppeteer';
-import type {AnyValue, Nullable} from '@memlab/core';
+import type {AnyValue, Nullable} from '@wrtools/memlab-core';
 
-import {config, info} from '@memlab/core';
+import {config, info} from '@wrtools/memlab-core';
 import ScriptManager from './ScriptManager';
 
 // https://chromedevtools.github.io/devtools-protocol/tot/Network/#method-getResponseBodyForInterception

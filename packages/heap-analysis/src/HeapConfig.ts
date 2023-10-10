@@ -8,8 +8,8 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapSnapshot, Optional, IHeapConfig} from '@memlab/core';
-import {config} from '@memlab/core';
+import type {IHeapSnapshot, Optional, IHeapConfig} from '@wrtools/memlab-core';
+import {config} from '@wrtools/memlab-core';
 
 class HeapConfig implements IHeapConfig {
   public isCliInteractiveMode = false;

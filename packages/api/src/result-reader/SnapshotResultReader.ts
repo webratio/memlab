@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 
-import {config, E2EStepInfo, RunMetaInfo} from '@memlab/core';
+import {config, E2EStepInfo, RunMetaInfo} from '@wrtools/memlab-core';
 
 import fs from 'fs-extra';
-import {FileManager, RunMetaInfoManager, utils} from '@memlab/core';
+import {FileManager, RunMetaInfoManager, utils} from '@wrtools/memlab-core';
 import BaseResultReader from './BaseResultReader';
 
 /**
@@ -24,7 +24,7 @@ import BaseResultReader from './BaseResultReader';
  * like to use the `findLeaks` to detect memory leaks:
  *
  * ```javascript
- * const {SnapshotResultReader, findLeaks} = require('@memlab/api');
+ * const {SnapshotResultReader, findLeaks} = require('@wrtools/memlab-api');
  *
  * // baseline, target, and final are file paths of heap snapshot files
  * const reader = SnapshotResultReader.fromSnapshots(baseline, target, final);
@@ -89,7 +89,7 @@ export default class SnapshotResultReader extends BaseResultReader {
    *
    * * **Examples**:
    * ```javascript
-   * const {SnapshotResultReader, findLeaks} = require('@memlab/api');
+   * const {SnapshotResultReader, findLeaks} = require('@wrtools/memlab-api');
    *
    * // baseline, target, and final are file paths of heap snapshot files
    * const reader = SnapshotResultReader.fromSnapshots(baseline, target, final);
@@ -122,7 +122,7 @@ export default class SnapshotResultReader extends BaseResultReader {
    *
    * * **Examples**:
    * ```javascript
-   * const {SnapshotResultReader} = require('@memlab/api');
+   * const {SnapshotResultReader} = require('@wrtools/memlab-api');
    *
    * // baseline, target, and final are file paths of heap snapshot files
    * const reader = SnapshotResultReader.fromSnapshots(baseline, target, final);
@@ -149,7 +149,7 @@ export default class SnapshotResultReader extends BaseResultReader {
    *
    * * **Examples**:
    * ```javascript
-   * const {SnapshotResultReader} = require('@memlab/api');
+   * const {SnapshotResultReader} = require('@wrtools/memlab-api');
    *
    * // baseline, target, and final are file paths of heap snapshot files
    * const reader = SnapshotResultReader.fromSnapshots(baseline, target, final);
@@ -171,7 +171,7 @@ export default class SnapshotResultReader extends BaseResultReader {
    *
    * * **Examples**:
    * ```javascript
-   * const {SnapshotResultReader} = require('@memlab/api');
+   * const {SnapshotResultReader} = require('@wrtools/memlab-api');
    *
    * // baseline, target, and final are file paths of heap snapshot files
    * const reader = SnapshotResultReader.fromSnapshots(baseline, target, final);

@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, Optional} from '@memlab/core';
+import type {CLIOptions, Optional} from '@wrtools/memlab-core';
 
 import BaseCommand from '../BaseCommand';
-import {config, fileManager, BaseOption} from '@memlab/core';
+import {config, fileManager, BaseOption} from '@wrtools/memlab-core';
 import SetWorkingDirectoryOption from '../options/SetWorkingDirectoryOption';
 
 export default class InitDirectoryCommand extends BaseCommand {

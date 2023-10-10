@@ -13,10 +13,10 @@ import type {
   CLIOptions,
   CommandOptionExample,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {analysis, config, fileManager, runInfoUtils} from '@memlab/core';
+import {analysis, config, fileManager, runInfoUtils} from '@wrtools/memlab-core';
 import BaselineFileOption from '../../options/heap/BaselineFileOption';
 import FinalFileOption from '../../options/heap/FinalFileOption';
 import JSEngineOption from '../../options/heap/JSEngineOption';

@@ -1,5 +1,5 @@
 {
-  "name": "@memlab/core",
+  "name": "@wrtools/memlab-core",
   "version": "1.1.26",
   "license": "MIT",
   "description": "memlab core libraries",
@@ -54,17 +54,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/facebook/memlab.git",
+    "url": "git+https://github.com/webratio/memlab.git",
     "directory": "packages/core"
   },
   "scripts": {
     "build-pkg": "tsc",
     "test-pkg": "jest .",
-    "publish-patch": "npm publish",
     "clean-pkg": "rm -rf ./dist && rm -rf ./node_modules && rm -f ./tsconfig.tsbuildinfo"
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/memlab/issues"
-  },
-  "homepage": "https://github.com/facebook/memlab#readme"
+  }
 }

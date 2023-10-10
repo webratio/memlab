@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {E2EStepInfo, RunMetaInfo} from '@memlab/core';
+import type {E2EStepInfo, RunMetaInfo} from '@wrtools/memlab-core';
 
 import fs from 'fs-extra';
 import path from 'path';
-import {runInfoUtils, utils} from '@memlab/core';
+import {runInfoUtils, utils} from '@wrtools/memlab-core';
 import BaseResultReader from './BaseResultReader';
 
 /**
@@ -29,7 +29,7 @@ export default class BrowserInteractionResultReader extends BaseResultReader {
    *
    * * **Examples**:
    * ```javascript
-   * const {BrowserInteractionResultReader} = require('@memlab/api');
+   * const {BrowserInteractionResultReader} = require('@wrtools/memlab-api');
    *
    * const dataDir = '/tmp/memlab'; // where the last memlab run stores results
    * const reader = BrowserInteractionResultReader.from(dataDir);
@@ -45,7 +45,7 @@ export default class BrowserInteractionResultReader extends BaseResultReader {
    * @returns an array of snapshot file's absolute path
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};
@@ -70,7 +70,7 @@ export default class BrowserInteractionResultReader extends BaseResultReader {
    * @returns the absolute path of the directory
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};
@@ -91,7 +91,7 @@ export default class BrowserInteractionResultReader extends BaseResultReader {
    * @returns an array of browser interaction step information
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};
@@ -116,7 +116,7 @@ export default class BrowserInteractionResultReader extends BaseResultReader {
    * @returns meta data about the entire browser interaction
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};

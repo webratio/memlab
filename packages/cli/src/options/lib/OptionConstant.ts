@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {constant, setInternalValue} from '@memlab/core';
+import {constant, setInternalValue} from '@wrtools/memlab-core';
 
 const optionNames = {
   APP: 'app',

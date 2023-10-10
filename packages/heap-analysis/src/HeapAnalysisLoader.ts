@@ -10,7 +10,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import type BaseAnalysis from './BaseAnalysis';
 
 class HeapAnalysisLoader {

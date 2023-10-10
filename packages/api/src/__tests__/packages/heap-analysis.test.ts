@@ -11,10 +11,10 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import type {Page} from 'puppeteer';
-import type {IScenario} from '@memlab/core';
-import type {HeapAnalysisOptions} from '@memlab/heap-analysis';
+import type {IScenario} from '@wrtools/memlab-core';
+import type {HeapAnalysisOptions} from '@wrtools/memlab-heap-analysis';
 
-import {snapshotMapReduce, BaseAnalysis} from '@memlab/heap-analysis';
+import {snapshotMapReduce, BaseAnalysis} from '@wrtools/memlab-heap-analysis';
 import {analyze} from '../../index';
 import {testSetup, testTimeout} from '../API/lib/E2ETestSettings';
 import {takeSnapshots} from '../../API';

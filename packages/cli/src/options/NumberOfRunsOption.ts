@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {AnyRecord, MemLabConfig, Optional} from '@memlab/core';
-import {BaseOption} from '@memlab/core';
+import type {AnyRecord, MemLabConfig, Optional} from '@wrtools/memlab-core';
+import {BaseOption} from '@wrtools/memlab-core';
 import optionConstants from './lib/OptionConstant';
 
 const DEFAULT_NUM_RUNS = 10;

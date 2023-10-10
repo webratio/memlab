@@ -13,11 +13,11 @@ import type {
   CLIOptions,
   CommandOptionExample,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import fs from 'fs';
 import path from 'path';
-import {fileManager} from '@memlab/core';
+import {fileManager} from '@wrtools/memlab-core';
 import BaseCommand, {CommandCategory} from '../BaseCommand';
 import CheckLeakCommand from './heap/CheckLeakCommand';
 import InitDirectoryCommand from './InitDirectoryCommand';

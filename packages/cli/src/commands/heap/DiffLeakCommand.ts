@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 import type {ParsedArgs} from 'minimist';
-import {BaseOption, CLIOptions} from '@memlab/core';
+import {BaseOption, CLIOptions} from '@wrtools/memlab-core';
 import type {CheckLeakCommandOptions} from './CheckLeakCommand';
 
-import {analysis, info, config, runInfoUtils, utils} from '@memlab/core';
+import {analysis, info, config, runInfoUtils, utils} from '@wrtools/memlab-core';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
 import JSEngineOption from '../../options/heap/JSEngineOption';
 import InitDirectoryCommand from '../InitDirectoryCommand';

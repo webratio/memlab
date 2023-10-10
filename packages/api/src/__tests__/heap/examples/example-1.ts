@@ -8,8 +8,8 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapSnapshot} from '@memlab/core';
-import {takeNodeMinimalHeap} from '@memlab/core';
+import type {IHeapSnapshot} from '@wrtools/memlab-core';
+import {takeNodeMinimalHeap} from '@wrtools/memlab-core';
 
 class TestObject {
   public arr1 = [1, 2, 3];

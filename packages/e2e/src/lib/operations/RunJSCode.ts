@@ -9,8 +9,8 @@
  */
 
 import {Page} from 'puppeteer';
-import {info, utils} from '@memlab/core';
-import type {AnyFunction, AnyOptions, AnyValue} from '@memlab/core';
+import {info, utils} from '@wrtools/memlab-core';
+import type {AnyFunction, AnyOptions, AnyValue} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 import interactUtils from './InteractionUtils';
 

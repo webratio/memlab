@@ -8,15 +8,15 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions} from '@memlab/core';
+import type {CLIOptions} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
 import BaseCommand from '../BaseCommand';
-import {config, info} from '@memlab/core';
-import {registerPackage as registerPkgAPI} from '@memlab/api';
-import {registerPackage as registerPkgCore} from '@memlab/core';
-import {registerPackage as registerPkgHeapAnalysis} from '@memlab/heap-analysis';
-import {registerPackage as registerPkgE2E} from '@memlab/e2e';
+import {config, info} from '@wrtools/memlab-core';
+import {registerPackage as registerPkgAPI} from '@wrtools/memlab-api';
+import {registerPackage as registerPkgCore} from '@wrtools/memlab-core';
+import {registerPackage as registerPkgHeapAnalysis} from '@wrtools/memlab-heap-analysis';
+import {registerPackage as registerPkgE2E} from '@wrtools/memlab-e2e';
 
 export default class GetVersionCommand extends BaseCommand {
   getCommandName(): string {

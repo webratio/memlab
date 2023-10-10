@@ -11,7 +11,7 @@
 import BaseOperation from './BaseOperation';
 import type {Page} from 'puppeteer';
 import EscOperation from './EscOperation';
-import type {OperationArgs} from '@memlab/core';
+import type {OperationArgs} from '@wrtools/memlab-core';
 import BackOperation from './BackOperation';
 import InteractionUtils from './InteractionUtils';
 

@@ -8,12 +8,12 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions} from '@memlab/core';
+import type {CLIOptions} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
 import BaseCommand from '../BaseCommand';
-import {defaultTestPlanner} from '@memlab/e2e';
-import {info} from '@memlab/core';
+import {defaultTestPlanner} from '@wrtools/memlab-e2e';
+import {info} from '@wrtools/memlab-core';
 
 export default class ListScenariosCommand extends BaseCommand {
   getCommandName(): string {

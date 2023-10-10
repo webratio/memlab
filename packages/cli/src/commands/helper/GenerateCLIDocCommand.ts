@@ -8,13 +8,13 @@
  * @oncall web_perf_infra
  */
 
-import type {BaseOption, CLIOptions, CommandOptionExample} from '@memlab/core';
+import type {BaseOption, CLIOptions, CommandOptionExample} from '@wrtools/memlab-core';
 
 import path from 'path';
 import fs from 'fs-extra';
 import docUtils from './lib/DocUtils';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {config, fileManager, utils} from '@memlab/core';
+import {config, fileManager, utils} from '@wrtools/memlab-core';
 import universalOptions from '../../options/lib/UniversalOptions';
 
 export default class GenerateCLIDocCommand extends BaseCommand {

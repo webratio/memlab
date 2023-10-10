@@ -9,7 +9,7 @@
  */
 
 import {Page} from 'puppeteer';
-import {config} from '@memlab/core';
+import {config} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 import ClickOperation from './ClickOperation';
 import interactUtils from './InteractionUtils';

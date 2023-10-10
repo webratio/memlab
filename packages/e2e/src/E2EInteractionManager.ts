@@ -19,12 +19,12 @@ import type {
   OperationArgs,
   Optional,
   MemLabConfig,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import fs from 'fs';
 import path from 'path';
 import E2EUtils from './lib/E2EUtils';
-import {utils, info, serializer, browserInfo, config} from '@memlab/core';
+import {utils, info, serializer, browserInfo, config} from '@wrtools/memlab-core';
 import interactUtils from './lib/operations/InteractionUtils';
 import defaultTestPlanner, {TestPlanner} from './lib/operations/TestPlanner';
 import NetworkManager from './NetworkManager';

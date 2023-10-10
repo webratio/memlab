@@ -8,10 +8,10 @@
  * @oncall web_perf_infra
  */
 import type {ParsedArgs} from 'minimist';
-import type {AnyRecord, RecordValue} from '@memlab/core';
+import type {AnyRecord, RecordValue} from '@wrtools/memlab-core';
 
 import stringWidth from 'string-width';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import optionConstants from '../options/lib/OptionConstant';
 
 const breakableSymbolOnRight = new Set([

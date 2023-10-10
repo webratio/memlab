@@ -19,12 +19,12 @@ import type {
   IScenario,
   Optional,
   Nullable,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import fs from 'fs';
 import path from 'path';
-import {utils, config as defaultConfig} from '@memlab/core';
+import {utils, config as defaultConfig} from '@wrtools/memlab-core';
 import testRunnerLoader from '../../TestRunnerLoader';
-import type {MemLabConfig} from '@memlab/core';
+import type {MemLabConfig} from '@wrtools/memlab-core';
 import E2EUtils from '../E2EUtils';
 
 type VisitPlanPack = {

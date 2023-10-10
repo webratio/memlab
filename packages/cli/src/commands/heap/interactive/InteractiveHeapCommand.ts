@@ -13,18 +13,18 @@ import {
   CommandOptionExample,
   ErrorHandling,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
 import readline from 'readline';
 import fs from 'fs-extra';
 import minimist from 'minimist';
 import BaseCommand, {CommandCategory} from '../../../BaseCommand';
-import {BaseOption, utils, info, config} from '@memlab/core';
+import {BaseOption, utils, info, config} from '@wrtools/memlab-core';
 import SnapshotFileOption from '../../../options/heap/SnapshotFileOption';
 import JSEngineOption from '../../../options/heap/JSEngineOption';
-import {fileManager} from '@memlab/core';
-import {heapConfig, loadHeapSnapshot} from '@memlab/heap-analysis';
+import {fileManager} from '@wrtools/memlab-core';
+import {heapConfig, loadHeapSnapshot} from '@wrtools/memlab-heap-analysis';
 import {CommandDispatcher} from '../../../Dispatcher';
 import InteractiveCommandLoader from './InteractiveCommandLoader';
 

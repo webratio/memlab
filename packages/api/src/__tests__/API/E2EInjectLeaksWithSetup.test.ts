@@ -11,7 +11,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import type {Page} from 'puppeteer';
-import type {IHeapNode, IScenario} from '@memlab/core';
+import type {IHeapNode, IScenario} from '@wrtools/memlab-core';
 
 import os from 'os';
 import path from 'path';

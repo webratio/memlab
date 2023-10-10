@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {MemLabConfig} from '@memlab/core';
-import {BaseOption} from '@memlab/core';
+import type {MemLabConfig} from '@wrtools/memlab-core';
+import {BaseOption} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class SkipExtraOperationOption extends BaseOption {

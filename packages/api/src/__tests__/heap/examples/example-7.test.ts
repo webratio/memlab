@@ -8,8 +8,8 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapSnapshot, AnyValue} from '@memlab/core';
-import {config, takeNodeMinimalHeap, tagObject} from '@memlab/core';
+import type {IHeapSnapshot, AnyValue} from '@wrtools/memlab-core';
+import {config, takeNodeMinimalHeap, tagObject} from '@wrtools/memlab-core';
 
 test('memory test', async () => {
   config.muteConsole = true;

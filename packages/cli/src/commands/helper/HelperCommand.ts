@@ -14,12 +14,12 @@ import type {
   CLIOptions,
   CommandOptionExample,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
 import stringWidth from 'string-width';
-import {config, info, utils} from '@memlab/core';
-import {heapConfig} from '@memlab/heap-analysis';
+import {config, info, utils} from '@wrtools/memlab-core';
+import {heapConfig} from '@wrtools/memlab-heap-analysis';
 import docUtils from './lib/DocUtils';
 import commandOrder from './lib/CommandOrder';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';

@@ -8,15 +8,15 @@
  * @oncall web_perf_infra
  */
 
-import type {AnyValue, BaseOption} from '@memlab/core';
+import type {AnyValue, BaseOption} from '@wrtools/memlab-core';
 import type {
   AnalyzeSnapshotResult,
   HeapAnalysisOptions,
   RunHeapAnalysisOptions,
 } from './PluginUtils';
 
-import {config, constant, fileManager, info, runInfoUtils} from '@memlab/core';
-import {defaultTestPlanner} from '@memlab/e2e';
+import {config, constant, fileManager, info, runInfoUtils} from '@wrtools/memlab-core';
+import {defaultTestPlanner} from '@wrtools/memlab-e2e';
 import pluginUtils from './PluginUtils';
 
 // Identify the target scenario and

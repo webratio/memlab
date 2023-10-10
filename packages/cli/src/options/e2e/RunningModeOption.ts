@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {MemLabConfig} from '@memlab/core';
-import {BaseOption, modes} from '@memlab/core';
+import type {MemLabConfig} from '@wrtools/memlab-core';
+import {BaseOption, modes} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class RunningModeOption extends BaseOption {

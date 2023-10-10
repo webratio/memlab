@@ -142,7 +142,7 @@ export type CLIArgs = {
  *
  * ```typescript
  * import type {Page} from 'puppeteer';
- * import type {RunOptions} from '@memlab/api';
+ * import type {RunOptions} from '@wrtools/memlab-api';
  *
  * const runOptions: RunOptions = {
  *   scenario: {
@@ -164,8 +164,8 @@ export type CLIArgs = {
  * when necessary:
  *
  * ```typescript
- * import type {Page} from '@memlab/core' // import Page type from memlab
- * import type {RunOptions} from 'memlab';
+ * import type {Page} from '@wrtools/memlab-core' // import Page type from memlab
+ * import type {RunOptions} from '@wrtools/memlab';
  *
  * const runOptions: RunOptions = {
  *   scenario: {
@@ -341,7 +341,7 @@ export type QuickExperiment = {
  * type annotations.
  *
  * ```typescript
- * import {IHeapNode, IHeapSnapshot, HeapNodeIdSet, utils} from '@memlab/core';
+ * import {IHeapNode, IHeapSnapshot, HeapNodeIdSet, utils} from '@wrtools/memlab-core';
  *
  * function initMap(snapshot: IHeapSnapshot): Record<string, number> {
  *   const map = Object.create(null);
@@ -528,9 +528,9 @@ export type InteractionsCallback = (
  * ```
  *
  * The test scenario instance can also be passed to the
- * {@link run} API exported by `@memlab/api`.
+ * {@link run} API exported by `@wrtools/memlab-api`.
  * ```typescript
- * const {run} = require('@memlab/api');
+ * const {run} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {
@@ -1092,9 +1092,9 @@ export interface IHeapSnapshot {
    *
    * * **Examples**:
    * ```typescript
-   * import type {IHeapSnapshot, IHeapNode} from '@memlab/core';
-   * import {dumpNodeHeapSnapshot} from '@memlab/core';
-   * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+   * import type {IHeapSnapshot, IHeapNode} from '@wrtools/memlab-core';
+   * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+   * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
    *
    * (async function () {
    *   const heapFile = dumpNodeHeapSnapshot();
@@ -1118,9 +1118,9 @@ export interface IHeapSnapshot {
    *
    * * **Examples**:
    * ```typescript
-   * import type {IHeapSnapshot, IHeapEdge} from '@memlab/core';
-   * import {dumpNodeHeapSnapshot} from '@memlab/core';
-   * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+   * import type {IHeapSnapshot, IHeapEdge} from '@wrtools/memlab-core';
+   * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+   * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
    *
    * (async function () {
    *   const heapFile = dumpNodeHeapSnapshot();
@@ -1144,9 +1144,9 @@ export interface IHeapSnapshot {
    *
    * * **Examples**:
    * ```typescript
-   * import type {IHeapSnapshot} from '@memlab/core';
-   * import {dumpNodeHeapSnapshot} from '@memlab/core';
-   * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+   * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+   * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+   * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
    *
    * (async function () {
    *   const heapFile = dumpNodeHeapSnapshot();
@@ -1167,8 +1167,8 @@ export interface IHeapSnapshot {
    * * **Examples**: you can write a jest unit test with memory assertions:
    * ```typescript
    * // save as example.test.ts
-   * import type {IHeapSnapshot, Nullable} from '@memlab/core';
-   * import {config, takeNodeMinimalHeap} from '@memlab/core';
+   * import type {IHeapSnapshot, Nullable} from '@wrtools/memlab-core';
+   * import {config, takeNodeMinimalHeap} from '@wrtools/memlab-core';
    *
    * class TestObject {
    *   public arr1 = [1, 2, 3];
@@ -1206,8 +1206,8 @@ export interface IHeapSnapshot {
    *
    * * **Examples**:
    * ```typescript
-   * import type {IHeapSnapshot} from '@memlab/core';
-   * import {takeNodeMinimalHeap} from '@memlab/core';
+   * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+   * import {takeNodeMinimalHeap} from '@wrtools/memlab-core';
    *
    * class TestObject {
    *   public arr1 = [1, 2, 3];
@@ -1234,9 +1234,9 @@ export interface IHeapSnapshot {
    *
    * * **Examples**:
    * ```typescript
-   * import type {IHeapSnapshot} from '@memlab/core';
-   * import {dumpNodeHeapSnapshot} from '@memlab/core';
-   * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+   * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+   * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+   * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
    *
    * (async function () {
    *   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -1262,8 +1262,8 @@ export interface IHeapSnapshot {
    * @returns returns `true` if there is at least one such object in the heap
    *
    * ```typescript
-   * import type {IHeapSnapshot, AnyValue} from '@memlab/core';
-   * import {config, takeNodeMinimalHeap, tagObject} from '@memlab/core';
+   * import type {IHeapSnapshot, AnyValue} from '@wrtools/memlab-core';
+   * import {config, takeNodeMinimalHeap, tagObject} from '@wrtools/memlab-core';
    *
    * test('memory test', async () => {
    *   config.muteConsole = true;
@@ -1305,9 +1305,9 @@ export interface IHeapSnapshot {
  * {@link getFullHeapFromFile} API.
  *
  * ```typescript
- * import type {IHeapSnapshot, IHeapNode, IHeapLocation} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapNode, IHeapLocation} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -1383,9 +1383,9 @@ export interface IHeapEdgeBasic {
  * {@link getFullHeapFromFile} API.
  *
  * ```typescript
- * import type {IHeapSnapshot, IHeapEdge} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapEdge} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -1452,9 +1452,9 @@ export interface IHeapEdge extends IHeapEdgeBasic {
  *
  * * **Examples**:
  * ```typescript
- * import type {IHeapSnapshot, IHeapEdges} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapEdges} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -1539,9 +1539,9 @@ export type EdgeIterationCallback = (
  * {@link getFullHeapFromFile} API.
  *
  * ```typescript
- * import type {IHeapSnapshot, IHeapNode} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapNode} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -1919,9 +1919,9 @@ export interface IHeapNode extends IHeapNodeBasic {
  * {@link getFullHeapFromFile} API.
  *
  * ```typescript
- * import type {IHeapSnapshot, IHeapNode, IHeapStringNode} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapNode, IHeapStringNode} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -1956,9 +1956,9 @@ export interface IHeapStringNode extends IHeapNode {
  *
  * * **Examples**:
  * ```typescript
- * import type {IHeapSnapshot, IHeapNodes} from '@memlab/core';
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot, IHeapNodes} from '@wrtools/memlab-core';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heapFile = dumpNodeHeapSnapshot();

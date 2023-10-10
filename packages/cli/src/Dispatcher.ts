@@ -9,9 +9,9 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {AnyRecord, MemLabConfig} from '@memlab/core';
+import type {AnyRecord, MemLabConfig} from '@wrtools/memlab-core';
 
-import {config, info} from '@memlab/core';
+import {config, info} from '@wrtools/memlab-core';
 import BaseCommand from './BaseCommand';
 import HelperCommand from './commands/helper/HelperCommand';
 import universalOptions from './options/lib/UniversalOptions';

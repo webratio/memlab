@@ -10,7 +10,7 @@
 
 import type {ParsedArgs} from 'minimist';
 
-import {BaseOption, MemLabConfig, constant, utils} from '@memlab/core';
+import {BaseOption, MemLabConfig, constant, utils} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class JSEngineOption extends BaseOption {

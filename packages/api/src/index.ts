@@ -9,20 +9,20 @@
  */
 
 import path from 'path';
-import {PackageInfoLoader} from '@memlab/core';
+import {PackageInfoLoader} from '@wrtools/memlab-core';
 /** @internal */
 export async function registerPackage(): Promise<void> {
   return PackageInfoLoader.registerPackage(path.join(__dirname, '..'));
 }
 
 export * from './API';
-export * from '@memlab/heap-analysis';
+export * from '@wrtools/memlab-heap-analysis';
 export {default as BrowserInteractionResultReader} from './result-reader/BrowserInteractionResultReader';
 export {default as SnapshotResultReader} from './result-reader/SnapshotResultReader';
 export {
   dumpNodeHeapSnapshot,
   getNodeInnocentHeap,
   takeNodeMinimalHeap,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 /** @internal */
-export {config} from '@memlab/core';
+export {config} from '@wrtools/memlab-core';

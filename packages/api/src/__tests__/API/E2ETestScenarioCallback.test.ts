@@ -16,7 +16,7 @@ import type {
   IHeapSnapshot,
   IScenario,
   HeapNodeIdSet,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import {run} from '../../index';
 import {testSetup, testTimeout} from './lib/E2ETestSettings';

@@ -8,14 +8,14 @@
  * @oncall web_perf_infra
  */
 import type {WorkerOptions} from 'worker_threads';
-import type {IHeapSnapshot, IHeapNode, Nullable, IHeapEdge} from '@memlab/core';
+import type {IHeapSnapshot, IHeapNode, Nullable, IHeapEdge} from '@wrtools/memlab-core';
 import type ListComponent from './ListComponent';
 
 import path from 'path';
 import chalk from 'chalk';
 import {Worker} from 'worker_threads';
-import {utils, analysis} from '@memlab/core';
-import {ScriptManager} from '@memlab/e2e';
+import {utils, analysis} from '@wrtools/memlab-core';
+import {ScriptManager} from '@wrtools/memlab-e2e';
 import {
   ComponentDataItem,
   ComponentData,

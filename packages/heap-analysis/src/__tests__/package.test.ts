@@ -7,10 +7,10 @@
  * @format
  * @oncall web_perf_infra
  */
-import type {IHeapNode} from '@memlab/core';
+import type {IHeapNode} from '@wrtools/memlab-core';
 import type {HeapAnalysisOptions} from '../index';
 
-import {config, dumpNodeHeapSnapshot} from '@memlab/core';
+import {config, dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
 import {
   getSnapshotFileForAnalysis,
   loadHeapSnapshot,

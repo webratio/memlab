@@ -10,7 +10,7 @@
 
 import type {ParsedArgs} from 'minimist';
 
-import {BaseOption, MemLabConfig} from '@memlab/core';
+import {BaseOption, MemLabConfig} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class CleanupSnapshotOption extends BaseOption {

@@ -8,12 +8,12 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, Optional} from '@memlab/core';
+import type {CLIOptions, Optional} from '@wrtools/memlab-core';
 
 import fs from 'fs-extra';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import BaseCommand from '../BaseCommand';
-import {fileManager, info, BaseOption} from '@memlab/core';
+import {fileManager, info, BaseOption} from '@wrtools/memlab-core';
 import SetWorkingDirectoryOption from '../options/SetWorkingDirectoryOption';
 
 export default class PrintSummaryCommand extends BaseCommand {

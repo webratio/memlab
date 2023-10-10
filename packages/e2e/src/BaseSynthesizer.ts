@@ -22,10 +22,10 @@ import type {
   CheckPageLoadCallback,
   Nullable,
   PageSetupCallback,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import type {Page} from 'puppeteer';
 
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import SynthesisUtils from './lib/SynthesisUtils';
 import interactUtils from './lib/operations/InteractionUtils';
 import E2EUtils from './lib/E2EUtils';

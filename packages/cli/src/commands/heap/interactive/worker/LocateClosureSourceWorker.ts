@@ -8,13 +8,13 @@
  * @oncall web_perf_infra
  */
 
-import type {ClosureScope} from '@memlab/e2e';
+import type {ClosureScope} from '@wrtools/memlab-e2e';
 
 import fs from 'fs';
 import {isMainThread, workerData} from 'worker_threads';
 
-import {fileManager, utils} from '@memlab/core';
-import {ScriptManager} from '@memlab/e2e';
+import {fileManager, utils} from '@wrtools/memlab-core';
+import {ScriptManager} from '@wrtools/memlab-e2e';
 
 type ClosureSrcWorkerInput = {
   url: string;

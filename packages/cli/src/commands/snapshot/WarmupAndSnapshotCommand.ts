@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, CommandOptionExample} from '@memlab/core';
+import type {CLIOptions, CommandOptionExample} from '@wrtools/memlab-core';
 
 import BaseCommand from '../../BaseCommand';
 import SetWorkingDirectoryOption from '../../options/SetWorkingDirectoryOption';

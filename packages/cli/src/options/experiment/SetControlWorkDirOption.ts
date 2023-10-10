@@ -9,9 +9,9 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import type {MemLabConfig, Nullable} from '@memlab/core';
+import type {MemLabConfig, Nullable} from '@wrtools/memlab-core';
 
-import {BaseOption} from '@memlab/core';
+import {BaseOption} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 import {extractAndCheckWorkDirs} from './ExperimentOptionUtils';
 

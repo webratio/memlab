@@ -8,16 +8,16 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, CommandOptionExample, Optional} from '@memlab/core';
+import type {CLIOptions, CommandOptionExample, Optional} from '@wrtools/memlab-core';
 
 import fs from 'fs-extra';
 import BaseCommand, {CommandCategory} from '../../BaseCommand';
-import {BaseOption, analysis, utils} from '@memlab/core';
+import {BaseOption, analysis, utils} from '@wrtools/memlab-core';
 import SnapshotFileOption from '../../options/heap/SnapshotFileOption';
 import JSEngineOption from '../../options/heap/JSEngineOption';
 import HeapNodeIdOption from '../../options/heap/HeapNodeIdOption';
 import SnapshotDirectoryOption from '../../options/heap/SnapshotDirectoryOption';
-import {fileManager} from '@memlab/core';
+import {fileManager} from '@wrtools/memlab-core';
 
 async function calculateRetainerTrace(): Promise<void> {
   const snapshotPath = utils.getSingleSnapshotFileForAnalysis();

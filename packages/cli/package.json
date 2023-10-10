@@ -1,5 +1,5 @@
 {
-  "name": "@memlab/cli",
+  "name": "@wrtools/memlab-cli",
   "version": "1.0.28",
   "license": "MIT",
   "description": "command line interface for memlab",
@@ -22,14 +22,11 @@
   "bin": {
     "memlab": "bin/memlab.js"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
-    "@memlab/api": "^1.0.11",
-    "@memlab/core": "^1.1.13",
-    "@memlab/e2e": "^1.0.11",
-    "@memlab/heap-analysis": "^1.0.7",
+    "@wrtools/memlab-api": "^1.0.11",
+    "@wrtools/memlab-core": "^1.1.13",
+    "@wrtools/memlab-e2e": "^1.0.11",
+    "@wrtools/memlab-heap-analysis": "^1.0.7",
     "ansi": "^0.3.1",
     "babar": "^0.2.0",
     "blessed": "^0.1.81",
@@ -55,17 +52,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/facebook/memlab.git",
+    "url": "git+https://github.com/webratio/memlab.git",
     "directory": "packages/cli"
   },
   "scripts": {
     "preinstall": "node bin/preinstall",
     "build-pkg": "tsc",
-    "publish-patch": "npm publish",
     "clean-pkg": "rm -rf ./dist && rm -rf ./node_modules && rm -f ./tsconfig.tsbuildinfo"
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/memlab/issues"
-  },
-  "homepage": "https://github.com/facebook/memlab#readme"
+  }
 }

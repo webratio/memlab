@@ -19,10 +19,10 @@ import {
   MemLabConfig,
   config,
   takeNodeMinimalHeap,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
-import {info, analysis, serializer, utils, TraceFinder} from '@memlab/core';
+import {info, analysis, serializer, utils, TraceFinder} from '@wrtools/memlab-core';
 import heapConfig from './HeapConfig';
 
 const nodeNameBlockList = new Set([
@@ -315,9 +315,9 @@ function getObjectOutgoingEdgeCount(node: IHeapNode): number {
  * @returns the absolute path of the heap snapshot file
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import type {HeapAnalysisOptions} from '@memlab/heap-analysis';
- * import {getSnapshotFileForAnalysis, BaseAnalysis} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import type {HeapAnalysisOptions} from '@wrtools/memlab-heap-analysis';
+ * import {getSnapshotFileForAnalysis, BaseAnalysis} from '@wrtools/memlab-heap-analysis';
  *
  * class ExampleAnalysis extends BaseAnalysis {
  *   public getCommandName(): string {
@@ -364,9 +364,9 @@ function getSnapshotFileForAnalysis(options: HeapAnalysisOptions): string {
  * @returns the absolute path of the directory
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import type {HeapAnalysisOptions} from '@memlab/heap-analysis';
- * import {getSnapshotFileForAnalysis, BaseAnalysis} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import type {HeapAnalysisOptions} from '@wrtools/memlab-heap-analysis';
+ * import {getSnapshotFileForAnalysis, BaseAnalysis} from '@wrtools/memlab-heap-analysis';
  *
  * class ExampleAnalysis extends BaseAnalysis {
  *   public getCommandName(): string {
@@ -417,9 +417,9 @@ function getSnapshotDirForAnalysis(
  * @returns the graph representation of the heap
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import type {HeapAnalysisOptions} from '@memlab/heap-analysis';
- * import {loadHeapSnapshot, BaseAnalysis} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import type {HeapAnalysisOptions} from '@wrtools/memlab-heap-analysis';
+ * import {loadHeapSnapshot, BaseAnalysis} from '@wrtools/memlab-heap-analysis';
  *
  * class ExampleAnalysis extends BaseAnalysis {
  *   public getCommandName(): string {
@@ -472,8 +472,8 @@ async function loadHeapSnapshot(
  * the heap
  * * **Examples**:
  * ```typescript
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile} from '@memlab/heap-analysis';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile} from '@wrtools/memlab-heap-analysis';
  *
  * (async function (){
  *   const heapFile = dumpNodeHeapSnapshot();
@@ -496,8 +496,8 @@ async function getFullHeapFromFile(file: string): Promise<IHeapSnapshot> {
  *
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import type {takeNodeFullHeap} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import type {takeNodeFullHeap} from '@wrtools/memlab-heap-analysis';
  *
  * (async function () {
  *   const heap: IHeapSnapshot = await takeNodeFullHeap();
@@ -547,9 +547,9 @@ async function loadProcessedSnapshot(
  * @returns the return value of your reduce function
  * * **Examples:**
  * ```typescript
- * import type {IHeapSnapshot} from '@memlab/core';
- * import type {HeapAnalysisOptions} from '@memlab/heap-analysis';
- * import {snapshotMapReduce, BaseAnalysis} from '@memlab/heap-analysis';
+ * import type {IHeapSnapshot} from '@wrtools/memlab-core';
+ * import type {HeapAnalysisOptions} from '@wrtools/memlab-heap-analysis';
+ * import {snapshotMapReduce, BaseAnalysis} from '@wrtools/memlab-heap-analysis';
  *
  * class ExampleAnalysis extends BaseAnalysis {
  *   public getCommandName(): string {
@@ -655,8 +655,8 @@ function aggregateDominatorMetrics(
  * @returns the set of dominator nodes/objects
  * * * **Examples**:
  * ```typescript
- * import {dumpNodeHeapSnapshot} from '@memlab/core';
- * import {getFullHeapFromFile, getDominatorNodes} from '@memlab/heap-analysis';
+ * import {dumpNodeHeapSnapshot} from '@wrtools/memlab-core';
+ * import {getFullHeapFromFile, getDominatorNodes} from '@wrtools/memlab-heap-analysis';
  *
  * class TestObject {}
  *

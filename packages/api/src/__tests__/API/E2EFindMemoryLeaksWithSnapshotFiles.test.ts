@@ -11,7 +11,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import type {Page} from 'puppeteer';
-import {fileManager} from '@memlab/core';
+import {fileManager} from '@wrtools/memlab-core';
 
 import path from 'path';
 import fs from 'fs-extra';

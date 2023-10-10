@@ -10,7 +10,7 @@
 
 import type {AnalyzeSnapshotResult, HeapAnalysisOptions} from '../PluginUtils';
 
-import {utils, BaseOption} from '@memlab/core';
+import {utils, BaseOption} from '@wrtools/memlab-core';
 import SnapshotFileOption from '../options/HeapAnalysisSnapshotFileOption';
 import BaseAnalysis from '../BaseAnalysis';
 import pluginUtils from '../PluginUtils';

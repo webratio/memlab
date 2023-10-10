@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions, CommandOptionExample} from '@memlab/core';
+import type {CLIOptions, CommandOptionExample} from '@wrtools/memlab-core';
 
 import BaseCommand from '../BaseCommand';
 import InitDirectoryCommand from './InitDirectoryCommand';
-import {modes, config, BaseOption} from '@memlab/core';
+import {modes, config, BaseOption} from '@wrtools/memlab-core';
 import CleanRunDataCommand from './CleanRunDataCommand';
 import {runPageInteractionFromCLI} from './snapshot/Snapshot';
 import AppOption from '../options/e2e/AppOption';

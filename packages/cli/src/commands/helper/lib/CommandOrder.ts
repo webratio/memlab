@@ -9,7 +9,7 @@
  */
 
 import type {CommandOrder} from './Types';
-import {constant, setInternalValue} from '@memlab/core';
+import {constant, setInternalValue} from '@wrtools/memlab-core';
 import {CommandCategory} from '../../../BaseCommand';
 import MemLabRunCommand from '../../MemLabRunCommand';
 import ListScenariosCommand from '../../ListScenariosCommand';

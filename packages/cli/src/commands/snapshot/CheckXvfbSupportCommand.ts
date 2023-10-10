@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {CLIOptions} from '@memlab/core';
+import type {CLIOptions} from '@wrtools/memlab-core';
 
 import cp from 'child_process';
 import BaseCommand from '../../BaseCommand';
-import {config, info} from '@memlab/core';
+import {config, info} from '@wrtools/memlab-core';
 
 export default class CheckXvfbSupportCommand extends BaseCommand {
   getCommandName(): string {

@@ -11,7 +11,7 @@
 import type {ElementHandle, Page} from 'puppeteer';
 
 import path from 'path';
-import {config, utils} from '@memlab/core';
+import {config, utils} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 import interactUtils from './InteractionUtils';
 

@@ -9,7 +9,7 @@
  */
 
 import type {Page} from 'puppeteer';
-import {config, ErrorHandling} from '@memlab/core';
+import {config, ErrorHandling} from '@wrtools/memlab-core';
 
 export const testTimeout = 5 * 60 * 1000;
 

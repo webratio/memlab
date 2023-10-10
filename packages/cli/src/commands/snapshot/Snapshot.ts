@@ -8,8 +8,8 @@
  * @oncall web_perf_infra
  */
 
-import {config, info, utils} from '@memlab/core';
-import {testInBrowser} from '@memlab/api';
+import {config, info, utils} from '@wrtools/memlab-core';
+import {testInBrowser} from '@wrtools/memlab-api';
 
 export async function runPageInteractionFromCLI(): Promise<void> {
   const start = Date.now();

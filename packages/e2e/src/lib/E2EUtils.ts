@@ -19,14 +19,14 @@ import {
   OperationArgs,
   runInfoUtils,
   RunMetaInfo,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import type {CDPSession, Page} from 'puppeteer';
 
 import fs from 'fs';
-import {utils, info, serializer, browserInfo, config} from '@memlab/core';
+import {utils, info, serializer, browserInfo, config} from '@wrtools/memlab-core';
 import BaseOperation from './operations/BaseOperation';
 import interactUtils from './operations/InteractionUtils';
-import {constant, setInternalValue} from '@memlab/core';
+import {constant, setInternalValue} from '@wrtools/memlab-core';
 
 type ExceptionHandler = (ex: Error) => void;
 

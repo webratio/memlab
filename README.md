@@ -1,13 +1,9 @@
 <h1 align="center">
   <a href="https://facebook.github.io/memlab/">MemLab</a>
 </h1>
-
 <p align="center">
-  <a href="https://github.com/facebook/memlab/blob/master/LICENSE">
+  <a href="https://github.com/webratio/memlab/blob/master/LICENSE">
     <img alt="Licensed under the MIT License" src="https://img.shields.io/badge/License-MIT-blue.svg"/>
-  </a>
-  <a href="https://github.com/facebook/memlab/blob/main/CONTRIBUTING.md">
-    <img alt="PR's Welcome" src="https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg"/>
   </a>
   <a href="https://www.npmjs.com/package/memlab?activeTab=readme">
     <img alt="npm version" src="https://img.shields.io/npm/v/memlab.svg?style=flat"/>
@@ -246,13 +242,3 @@ npm run test
 
 ## License
 memlab is MIT licensed, as found in the [LICENSE](LICENSE) file.
-
-## Contributing
-
-Check our [contributing guide](CONTRIBUTING.md) to learn about how to
-contribute to the project.
-
-## Code of Conduct
-
-Check our [Code Of Conduct](CODE_OF_CONDUCT.md) to learn more about our
-contributor standards and expectations.

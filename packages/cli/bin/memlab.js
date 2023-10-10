@@ -13,7 +13,7 @@
 // eslint-disable-next-line no-var
 var cli = require('../dist/index');
 
-// register the `@memlab/cli` package info
+// register the `@wrtools/memlab-cli` package info
 // so that `memlab version` get use the info
 // eslint-disable-next-line fb-www/promise-termination
 cli.registerPackage().then(() => {

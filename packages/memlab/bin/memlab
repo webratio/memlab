@@ -11,10 +11,10 @@
  */
 
 var path = require('path');
-var core = require('@memlab/core');
-var cli = require("@memlab/cli");
+var core = require('@wrtools/memlab-core');
+var cli = require("@wrtools/memlab-cli");
 
-// register `memlab` and `@memlab/cli` package info
+// register `memlab` and `@wrtools/memlab-cli` package info
 // so that `memlab version` get use the info
 Promise.all([
   // register the current `memlab` package

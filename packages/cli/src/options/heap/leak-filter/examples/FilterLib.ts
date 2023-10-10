@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {IHeapSnapshot, utils} from '@memlab/core';
+import {IHeapSnapshot, utils} from '@wrtools/memlab-core';
 
 export function initMap(snapshot: IHeapSnapshot): Record<string, number> {
   const map = Object.create(null);

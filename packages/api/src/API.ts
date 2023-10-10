@@ -17,7 +17,7 @@ import type {
   XvfbType,
   Nullable,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import {
   analysis,
@@ -27,14 +27,14 @@ import {
   config as defaultConfig,
   MemLabConfig,
   fileManager,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import {
   defaultTestPlanner,
   TestPlanner,
   Xvfb,
   E2EInteractionManager,
-} from '@memlab/e2e';
-import {BaseAnalysis} from '@memlab/heap-analysis';
+} from '@wrtools/memlab-e2e';
+import {BaseAnalysis} from '@wrtools/memlab-heap-analysis';
 import APIUtils from './lib/APIUtils';
 import BrowserInteractionResultReader from './result-reader/BrowserInteractionResultReader';
 import BaseResultReader from './result-reader/BaseResultReader';
@@ -120,7 +120,7 @@ export type APIOptions = {
  * @returns browser interaction results
  * * **Examples**:
  * ```javascript
- * const {warmupAndTakeSnapshots} = require('@memlab/api');
+ * const {warmupAndTakeSnapshots} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {
@@ -156,7 +156,7 @@ export async function warmupAndTakeSnapshots(
  * interaction results from disk
  * * **Examples**:
  * ```javascript
- * const {run} = require('@memlab/api');
+ * const {run} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {
@@ -189,7 +189,7 @@ export async function run(runOptions: RunOptions = {}): Promise<RunResult> {
  * @returns a utility reading browser interaction results from disk
  * * **Examples**:
  * ```javascript
- * const {takeSnapshots} = require('@memlab/api');
+ * const {takeSnapshots} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {
@@ -219,7 +219,7 @@ export async function takeSnapshots(
  * @returns leak traces detected and clustered from the browser interaction
  * * **Examples**:
  * ```javascript
- * const {findLeaks, takeSnapshots} = require('@memlab/api');
+ * const {findLeaks, takeSnapshots} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {
@@ -280,7 +280,7 @@ export async function findLeaksBySnapshotFilePaths(
  * analysis class you are using for `heapAnalyzer`.
  * * **Examples**:
  * ```javascript
- * const {analyze, takeSnapshots, StringAnalysis} = require('@memlab/api');
+ * const {analyze, takeSnapshots, StringAnalysis} = require('@wrtools/memlab-api');
  *
  * (async function () {
  *   const scenario = {

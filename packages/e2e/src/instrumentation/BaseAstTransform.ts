@@ -11,7 +11,7 @@
 import type {ParseResult} from '@babel/core';
 import type {RewriteScriptOption} from './ScriptRewriteManager';
 
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 
 export default abstract class BaseAstTransform {
   public async transform(

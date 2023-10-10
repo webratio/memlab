@@ -8,11 +8,11 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapEdge, IHeapNode, IHeapSnapshot} from '@memlab/core';
+import type {IHeapEdge, IHeapNode, IHeapSnapshot} from '@wrtools/memlab-core';
 import type {AnalyzeSnapshotResult, HeapAnalysisOptions} from '../PluginUtils';
 
 import chalk from 'chalk';
-import {BaseOption, config, utils, info} from '@memlab/core';
+import {BaseOption, config, utils, info} from '@wrtools/memlab-core';
 import NodeIdOption from '../options/HeapAnalysisNodeIdOption';
 import SnapshotFileOption from '../options/HeapAnalysisSnapshotFileOption';
 import BaseAnalysis from '../BaseAnalysis';

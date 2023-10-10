@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {config, IHeapSnapshot} from '@memlab/core';
+import {config, IHeapSnapshot} from '@wrtools/memlab-core';
 import {takeNodeFullHeap} from '..';
 import heapAnalysisLoader from '../HeapAnalysisLoader';
 

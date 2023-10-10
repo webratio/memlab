@@ -14,13 +14,13 @@ import type {
   CommandOptionExample,
   IHeapSnapshot,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 import type {ComponentDataItem} from './ui-components/HeapViewUtils';
 import type {ObjectCategory} from './ui-components/HeapViewController';
 
 import fs from 'fs-extra';
-import {fileManager, utils, config} from '@memlab/core';
-import {heapConfig, loadHeapSnapshot} from '@memlab/heap-analysis';
+import {fileManager, utils, config} from '@wrtools/memlab-core';
+import {heapConfig, loadHeapSnapshot} from '@wrtools/memlab-heap-analysis';
 import BaseCommand, {CommandCategory} from '../../../BaseCommand';
 import SnapshotFileOption from '../../../options/heap/SnapshotFileOption';
 import JSEngineOption from '../../../options/heap/JSEngineOption';

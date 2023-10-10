@@ -16,10 +16,10 @@ import type {
   IHeapSnapshot,
   IMemoryAnalystHeapNodeReferrenceStat,
   HeapNodeIdSet,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
 import chalk from 'chalk';
-import {analysis, config, utils, info, serializer} from '@memlab/core';
+import {analysis, config, utils, info, serializer} from '@wrtools/memlab-core';
 import BaseAnalysis from '../BaseAnalysis';
 import pluginUtils from '../PluginUtils';
 import SnapshotFileOption from '../options/HeapAnalysisSnapshotFileOption';

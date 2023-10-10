@@ -9,7 +9,7 @@
  */
 
 import minimist, {ParsedArgs} from 'minimist';
-import {utils} from '@memlab/core';
+import {utils} from '@wrtools/memlab-core';
 import commandDispatcher from './Dispatcher';
 
 export async function run(): Promise<void> {

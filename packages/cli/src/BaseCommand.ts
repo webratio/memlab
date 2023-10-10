@@ -13,9 +13,9 @@ import type {
   CommandOptionExample,
   Nullable,
   Optional,
-} from '@memlab/core';
+} from '@wrtools/memlab-core';
 
-import {BaseOption} from '@memlab/core';
+import {BaseOption} from '@wrtools/memlab-core';
 
 export enum CommandCategory {
   COMMON = 'COMMON',

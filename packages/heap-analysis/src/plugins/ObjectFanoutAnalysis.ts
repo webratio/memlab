@@ -9,10 +9,10 @@
  */
 
 import type {AnalyzeSnapshotResult, HeapAnalysisOptions} from '../PluginUtils';
-import type {IHeapSnapshot, IHeapNode} from '@memlab/core';
+import type {IHeapSnapshot, IHeapNode} from '@wrtools/memlab-core';
 
 import {ParsedArgs} from 'minimist';
-import {BaseOption, utils} from '@memlab/core';
+import {BaseOption, utils} from '@wrtools/memlab-core';
 import BaseAnalysis from '../BaseAnalysis';
 import pluginUtils from '../PluginUtils';
 import SnapshotFileOption from '../options/HeapAnalysisSnapshotFileOption';

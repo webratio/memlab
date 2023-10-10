@@ -9,8 +9,8 @@
  */
 
 import type {ParsedArgs} from 'minimist';
-import {MemLabConfig, utils} from '@memlab/core';
-import {BaseOption} from '@memlab/core';
+import {MemLabConfig, utils} from '@wrtools/memlab-core';
+import {BaseOption} from '@wrtools/memlab-core';
 import optionConstants from './lib/OptionConstant';
 
 export default class MLClusteringMaxDFOption extends BaseOption {

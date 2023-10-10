@@ -8,12 +8,12 @@
  * @oncall web_perf_infra
  */
 
-import type {IHeapSnapshot} from '@memlab/core';
+import type {IHeapSnapshot} from '@wrtools/memlab-core';
 import type {Page} from 'puppeteer';
 
 import fs from 'fs';
 import path from 'path';
-import {config, info, utils} from '@memlab/core';
+import {config, info, utils} from '@wrtools/memlab-core';
 const puppeteer = config.isFB
   ? require('puppeteer-core')
   : require('puppeteer');

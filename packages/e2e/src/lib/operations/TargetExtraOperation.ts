@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {config} from '@memlab/core';
+import {config} from '@wrtools/memlab-core';
 import BaseOperation from './BaseOperation';
 import CompoundOperation from './CompoundOperation';
 import ScrollOperation from './ScrollOperation';

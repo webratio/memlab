@@ -8,7 +8,7 @@
  * @oncall web_perf_infra
  */
 
-import {utils, FileManager} from '@memlab/core';
+import {utils, FileManager} from '@wrtools/memlab-core';
 import fs from 'fs-extra';
 
 /**
@@ -57,7 +57,7 @@ export default class BaseResultReader {
    * @returns absolute path of the directory
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};
@@ -79,7 +79,7 @@ export default class BaseResultReader {
    * @returns no return value
    * * **Examples**:
    * ```javascript
-   * const {takeSnapshots} = require('@memlab/api');
+   * const {takeSnapshots} = require('@wrtools/memlab-api');
    *
    * (async function () {
    *   const scenario = { url: () => 'https://www.npmjs.com'};

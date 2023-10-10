@@ -11,7 +11,7 @@
 import type {ParsedArgs} from 'minimist';
 
 import fs from 'fs';
-import {BaseOption, MemLabConfig, utils} from '@memlab/core';
+import {BaseOption, MemLabConfig, utils} from '@wrtools/memlab-core';
 import optionConstants from '../lib/OptionConstant';
 
 export default class SnapshotFileOption extends BaseOption {
