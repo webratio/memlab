@@ -12,7 +12,6 @@
 lerna-debug.log
 build.log
 node_modules
-package-lock.json
 package-oss.json
 packages/**/dist
 yarn-error.log
