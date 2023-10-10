@@ -114,8 +114,6 @@ memlab view-heap --snapshot <PATH TO .heapsnapshot FILE>
 
 You can optionally specify a specific heap object with the object's id: `--node-id @28173` to pinpoint a specific object.
 
-![heap-view](./website/static/img/heap-view.png)
-
 **Self-defined leak detector**: If you want to use a self-defined leak detector, add a `leakFilter` callback
 ([doc](https://facebook.github.io/memlab/docs/api/interfaces/core_src.IScenario/#-optional-leakfilter-leakfiltercallback))
 in the scenario file. `leakFilter` will be called for every unreleased heap
