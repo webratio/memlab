@@ -22,7 +22,7 @@ import process from 'process';
 import config, {ErrorHandling} from './Config';
 import info from './Console';
 import constant from './Constant';
-import parser from './HeapParser';
+import parser, { ParseOptions } from './HeapParser';
 
 const memCache: Record<string, AnyValue> = Object.create(null);
 
@@ -733,7 +733,7 @@ function handleSnapshotError(e: Error): void {
 
 async function getSnapshotFromFile(
   filename: string,
-  options: AnyOptions,
+  options: ParseOptions & AnyOptions,
 ): Promise<IHeapSnapshot> {
   const heapConfig = config.heapConfig;
   if (

@@ -121,9 +121,18 @@ function identifyAndSetEngine(snapshot: IHeapSnapshot): void {
   config.jsEngine = engine;
 }
 
-async function parse(file: string, options = {}): Promise<IHeapSnapshot> {
+export interface ParseOptions {
+  preprocessors?: Array<(snapshot: RawHeapSnapshot) => Promise<void>>;
+}
+
+async function parse(file: string, options: ParseOptions = {}): Promise<IHeapSnapshot> {
   const snapshot = await parseFile(file);
-  const ret = new HeapSnapshot(snapshot, options);
+  if (options.preprocessors) {
+    for (let preprocessor of options.preprocessors) {
+      await preprocessor(snapshot);
+    }
+  }
+  const ret = new HeapSnapshot(snapshot, {});
   identifyAndSetEngine(ret);
   return ret;
 }
